@@ -7,7 +7,14 @@
 
 
 def not_3(array: list) -> list:
-    return array
+    not3 = []
+    for i in array:
+        if type(i) == int:
+            if i % 3 != 0:
+                not3.append(i)
+        else:
+            continue
+    return not3
 
 
 if __name__ == '__main__':

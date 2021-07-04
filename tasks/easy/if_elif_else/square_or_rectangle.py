@@ -7,14 +7,19 @@
 
 ПРИМЕРЫ
 --------------------------------------------------------------------------------
-area_or_perimeter(6, 10) -> 32
-area_or_perimeter(4, 4) -> 16
+square_or_rectangle(6, 10) -> 32
+square_or_rectangle(4, 4) -> 16
 """
 
 
 def square_or_rectangle(side1: int, side2: int) -> int:
-    result = None
-    return result
+    square = (side1 ** 2) or (side2 ** 2)
+    rectangle = (side1 + side2) * 2
+
+    if side1 == side2:
+        return square
+    else:
+        return rectangle
 
 
 if __name__ == '__main__':

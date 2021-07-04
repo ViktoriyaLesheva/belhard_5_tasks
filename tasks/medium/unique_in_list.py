@@ -11,8 +11,8 @@ is_unique([2, 1, 5, 4, 2]) -> False
 
 
 def is_unique(array: list) -> bool:
-    result = None
-    return result
+    some_set = set(array)
+    return len(some_set) == len(array)
 
 
 if __name__ == '__main__':
